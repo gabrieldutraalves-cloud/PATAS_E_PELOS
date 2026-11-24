@@ -1,9 +1,0 @@
-/* Início formulário de login */
-.login-fundo { background: linear-gradient(#ffffffb5,#ffffffb5), url('../Images/main.png') center / cover; padding: 55px 18px; display: flex; justify-content: center; align-items: center; }
-.login { background: rgb(248,216,73); width: min(460px, 100%); padding: 30px; border: 1px solid #8d7927; }
-.login h1 { text-align: center; margin: 0 0 10px; }
-.login > p { text-align: center; line-height: 1.5; }
-.form-login { display: grid; gap: 18px; margin: 24px 0; }
-.form-login .btn { width: 100%; }
-.aviso-login { font-size: 13px; }
-/* Fim formulário de login */

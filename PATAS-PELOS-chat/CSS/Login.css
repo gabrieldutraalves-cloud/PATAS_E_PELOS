@@ -1,0 +1,112 @@
+body {
+    font-family: 'PT Serif', Georgia, serif;
+    margin: 0;
+    background-image: url('../Images/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    list-style: none;
+    font-size: 25px
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+/* Fim header */
+
+/* Início Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 240px;
+}
+
+/* Caixa de login */
+.login {
+    background-color: rgb(248, 216, 73);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 330px;
+    width: 90%;
+    max-width: 500px;
+
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/* Forms */
+.formEmail, .formSenha {
+    background-color: white;
+    display: flex;
+    width: 400px;
+    height: 70px;
+    margin: 10px;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.formEmail label, .formSenha label {
+    padding-left: 15px;
+}
+
+.formEmail input, .formSenha input {
+    font-size: 20px;
+    border-style: none;
+    text-align: center;
+}
+
+.login button {
+    background-color: rgb(32, 27, 32);
+
+    margin-top: 20px;
+    height: 50px;
+    width: 90px;
+    font-size: 22px;
+
+    border-radius: 10px;
+}
+
+.login button a {
+    text-decoration: none;
+    color: white;
+}
+
+.login h3 {
+    margin-top: 50px;
+}
+/* Fim Main */

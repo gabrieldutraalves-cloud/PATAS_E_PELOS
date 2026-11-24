@@ -1,0 +1,44 @@
+/* Início todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* Fim todo o site */
+
+/* Início body */
+body {
+    font-family: 'PT Serif', Georgia, serif;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+    color: white;
+}
+
+/* Início nav */
+.nav ul {
+    list-style: none;
+    font-size: 25px
+}
+
+.nav ul li {
+    padding-left: 550px;
+}

@@ -1,0 +1,95 @@
+/* Início todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* Fim todo o site */
+
+/* Início body */
+body {
+    font-family: 'PT Serif', Georgia, serif;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    list-style: none;
+    font-size: 25px
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* opções de escolha */
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    
+}
+
+/* cards de escolha */
+.opcoes article {   
+    background-color: rgb(248, 216, 73);
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.opcoes article:hover {
+    border: 3px solid black;
+    transition: 0.10s;
+}
+
+.opcoes article a {
+    text-decoration: none;
+    color: black;  
+    border-radius: 20px;
+}
+
+.opcoes article a img {
+    padding: 40px;
+    width: 250px;
+    height: 300px;
+    
+    align-items: center;
+    background-color:none;
+}
+
+.opcoes article h2 {
+    text-align: center;
+    padding: 20px;
+}

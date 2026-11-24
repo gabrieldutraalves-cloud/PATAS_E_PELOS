@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patas & Pelos – Status do banho e tosa</title>
+  <link rel="stylesheet" href="CSS/statusAgendamento.css">
+  
+    <!-- Ajustes visuais para telas menores -->
+    <link rel="stylesheet" href="CSS/ajustes-status.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Patas &amp; Pelos</h1>
+    <p>Acompanhe o banho e tosa do seu pet</p>
+  </header>
+
+  <main>
+    <section class="card info">
+      <h2>Atendimento</h2>
+      <p><strong>Pet:</strong> Thor</p>
+      <p><strong>Tutor:</strong> Maria Silva</p>
+      <p><strong>Serviço:</strong> Banho e tosa higiênica</p>
+      <p><strong>Previsão de entrega:</strong> 16:30</p>
+      <span class="badge" id="status-atual">Em andamento: Tosa</span>
+    </section>
+
+    <section class="card">
+      <h2>Etapas do serviço</h2>
+      <ul class="etapas" id="lista-etapas">
+        <li class="concluida"><span class="marcador">✓</span> Pet recebido</li>
+        <li class="concluida"><span class="marcador">✓</span> Banho</li>
+        <li class="atual"><span class="marcador">•</span> Tosa</li>
+        <li><span class="marcador"></span> Secagem e finalização</li>
+        <li><span class="marcador"></span> Pronto para retirada</li>
+      </ul>
+    </section>
+
+    <button id="btn-avancar">Avançar etapa (demonstração)</button>
+  </main>
+
+  <footer>Patas &amp; Pelos • Cuidando de quem você ama</footer>
+
+  <script>
+    // Simula o avanço do status. Em um sistema real, esses dados viriam de um servidor.
+    const etapas = document.querySelectorAll("#lista-etapas li");
+    const badge = document.getElementById("status-atual");
+    const botao = document.getElementById("btn-avancar");
+    let atual = 2; // índice da etapa atual (0 = primeira)
+
+    function atualizar() {
+      etapas.forEach((li, i) => {
+        li.classList.remove("concluida", "atual");
+        const marcador = li.querySelector(".marcador");
+        if (i < atual) {
+          li.classList.add("concluida");
+          marcador.textContent = "✓";
+        } else if (i === atual) {
+          li.classList.add("atual");
+          marcador.textContent = "•";
+        } else {
+          marcador.textContent = "";
+        }
+      });
+
+      const nome = etapas[atual].textContent.replace(/[✓•]/g, "").trim();
+      badge.textContent = atual === etapas.length - 1
+        ? "Pronto para retirada! 🎉"
+        : "Em andamento: " + nome;
+    }
+
+    botao.addEventListener("click", () => {
+      if (atual < etapas.length - 1) {
+        atual++;
+        atualizar();
+      } else {
+        botao.disabled = true;
+        botao.textContent = "Serviço concluído";
+      }
+    });
+  </script>
+
+</body>
+</html>

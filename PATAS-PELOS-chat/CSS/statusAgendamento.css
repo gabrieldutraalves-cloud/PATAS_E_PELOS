@@ -1,0 +1,114 @@
+:root {
+  --amarelo: #FFC82C;
+  --amarelo-claro: #FFF3C4;
+  --preto: #000000;
+  --branco: #FFFFFF;
+  --cinza: #5a5a5a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'PT Serif', Georgia, serif;
+  background: var(--amarelo-claro);
+  color: var(--preto);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--preto);
+  color: var(--amarelo);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 6px solid var(--amarelo);
+}
+
+header h1 { font-size: 1.8rem; }
+header p { color: var(--branco); font-size: 0.95rem; }
+
+main {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: var(--branco);
+  border: 2px solid var(--preto);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.info p { margin-bottom: 4px; }
+
+.badge {
+  display: inline-block;
+  background: var(--amarelo);
+  color: var(--preto);
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--preto);
+  margin-top: 8px;
+}
+
+/* Linha do tempo das etapas */
+.etapas { list-style: none; }
+
+.etapas li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: var(--cinza);
+}
+
+.etapas li:last-child { border-bottom: none; }
+
+.marcador {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--preto);
+  background: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.etapas li.concluida { color: var(--preto); }
+.etapas li.concluida .marcador { background: var(--preto); color: var(--amarelo); }
+
+.etapas li.atual { color: var(--preto); font-weight: bold; }
+.etapas li.atual .marcador { background: var(--amarelo); }
+
+button {
+  width: 100%;
+  background: var(--preto);
+  color: var(--amarelo);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover { background: #222; }
+button:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 2px; }
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+  color: var(--cinza);
+}

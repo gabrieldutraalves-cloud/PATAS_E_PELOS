@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/agendamento.css">
+    <title>Agendamento</title>
+    <!-- Ajustes de alinhamento e responsividade -->
+    <link rel="stylesheet" href="CSS/ajustes-visuais.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
+</head>
+<body class="pagina-agendamento">
+<!--Início Cabeçalho-->
+<header class="header">        
+    <a href="index.html"><img class="header_img" src="Images/inicio.png" alt="logo"></a>
+    <nav class="nav">
+        <Ul>
+            <li>
+                Agendamento
+            </li>
+        </Ul>
+    </nav>
+</header>
+<!--Fim Cabeçalho-->
+
+<div class="Agendamento">
+    <!--Área de agendamento-->
+    <article class="agendar">
+        <h3>
+            Agendamento
+        </h3>
+        <div>
+            <!--Unidade-->
+            <form action="">
+                <label for="Unidade">Unidade:</label>
+                    <select name="Unidade" id="Unidade">
+                        <option value="selecioneUnidade">
+                            Selecione a unidade
+                        </option>
+                        <option value="UnidadeCentro">
+                            Unidade Centro
+                        </option>
+                        <option value="UnidadeSul">
+                            Unidade Sul
+                        </option>
+                    </select>
+            </form>
+        </div>
+        <!--Serviço-->
+        <div>
+            <form>
+                <label for="Servico">Serviço:</label>
+                    <select name="Servico" id="Servico">
+                        <option value="">
+                            Selecione o serviço
+                        </option>
+                        <option value="banho&tosaSimples">
+                            Banho e tosa simples
+                        </option>
+                        <option value="banho&tosa_c/_hidratacao">
+                            Banho e tosa com hidratação
+                        </option>
+                        <option value="banho&tosaSimples">
+                            Banho e tosa premium
+                        </option>
+                    </select>
+            </form>
+        </div>
+        <!--Dia & horário-->
+        <div>
+            <form action="">
+                <label for="data">
+                    Data e horário: 
+                </label>
+                <input type="datetime-local" id="data" name="data">
+            </form>
+        </div>
+    </article>
+    <!--Conferir Status Agendamento-->
+    <article class="conferirAgendamento">
+        <h3>
+            Status Agendamento
+        </h3>
+        <form action="status.html" method="get">
+            <label for="protocolo">Protocolo:</label>
+            <input type="text" name="protocolo" id="protocolo">
+                <button type="submit">Verificar status</button>
+        </form>
+    </article>
+</div>
+</body>
+</html>

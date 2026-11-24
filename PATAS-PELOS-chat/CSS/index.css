@@ -1,0 +1,231 @@
+/* Início todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* Fim todo o site */
+
+/* Início body */
+body {
+    font-family: 'PT Serif', Georgia, serif;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header - configurações gerais */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/* Início header - configurações específicas */
+
+/* Logo */
+.header_img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Navegação */
+.nav_list {
+    display: flex;
+    gap: 180px;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 180px;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: transform 0.10s ease;
+}
+
+.nav_list a:hover {
+    transform: scale(1.25);
+    font-weight: bold;
+}
+/* Fim header */
+
+/* Início Main */
+.about {
+    background-image: url('../Images/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 82px;
+}
+
+.about section div {
+    color: white;
+    max-width: 65%;
+    text-align: start;
+}
+
+.about h1 {
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.about p {
+    font-size: 35px;
+    padding-top: 180px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+/* Fim Main */
+
+/* Início services */
+.services {
+    background-color: rgb(248, 216, 73);
+}
+
+.services-titulo {
+   padding: 25px 20px;
+   text-align: center;
+   background-color: rgb(248, 216, 73);
+}
+
+.services-titulo h1 {
+    font-size: 36px;
+    background-color: white;
+    margin: 0px 570px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px;
+    padding: 15px;
+}
+
+.services-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.services-div a h1 {
+    font-size: 36px;
+    padding: 35px 0px;
+    text-align: center;
+    background-color: white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 18px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px;
+}
+
+.services h3 {
+    margin-top:20px;
+    font-size: 25px;
+}
+
+.services p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.services-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.services-div a article {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    border-radius: 35px;
+    box-shadow: 6px 6px 6px rgb(182, 182, 101);
+}
+
+.services-div a img {
+
+    width: 350px;
+    height: 375px;
+    margin: 20px;
+    border-radius: 35px;
+}
+
+.preço {
+    box-shadow: none;
+    padding-top: 10px;
+}
+/* Fim services */
+
+/* Início categories */
+.categories {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.categories h2 {
+    padding-top: 12px ;
+    text-align: center;
+}
+
+.categories-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 180px;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.categories-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.categories-div img {
+    width: 120px;
+    height: 120px;
+    
+}
+/* Fim categories */
+
+/* Início location */
+.location {
+    text-align: center;
+    padding: 30px;
+}
+
+.map {
+    padding: 30px;
+    
+}
+/* Fim location */
+
+/* Início footer */
+.footer {
+    padding: 30px;
+    color: rgb(36, 34, 34);
+    background-color: rgb(248, 216, 73);
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+/* Fim footer */

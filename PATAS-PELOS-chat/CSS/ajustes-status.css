@@ -1,0 +1,9 @@
+/* Ajustes de responsividade para a página de status */
+main { width: min(100%, 660px); }
+.card { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  header { padding: 16px; }
+  header h1 { font-size: 1.4rem; }
+  main { padding: 0 12px; }
+  .card { padding: 16px; }
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: 'PT Serif', Georgia, serif;
+    margin: 0;
+    background-image: url(main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    list-style: none;
+    font-size: 25px
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+/* Fim header */
+
+/* Início Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 66px;
+}
+
+.cadastro {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    height: 500px;
+    width: 510px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.form {
+    background-color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.form input {
+    height: 25px;
+    border-style: none;
+}
+
+.form h3 {
+    margin-top: 10px;
+}
+
+.cadastro button {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+button a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/* Fim Main */

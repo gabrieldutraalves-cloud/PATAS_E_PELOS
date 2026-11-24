@@ -81,3 +81,7 @@ html {
     display: flex;
     flex-direction: column;
 }
+/* Espaçamento original dos campos reunidos em um único formulário */
+.campo-agendamento {
+    margin-bottom: 16px;
+}

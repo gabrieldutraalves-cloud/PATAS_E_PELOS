@@ -101,8 +101,7 @@ main {
     border-radius: 10px;
 }
 
-.login button a {
-    text-decoration: none;
+.login button {
     color: white;
 }
 

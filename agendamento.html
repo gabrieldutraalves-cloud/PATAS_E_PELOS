@@ -29,12 +29,12 @@
         <h3>
             Agendamento
         </h3>
-        <div>
+        <form action="PHP/agendamento.php" method="post">
+        <div class="campo-agendamento">
             <!--Unidade-->
-            <form action="">
                 <label for="Unidade">Unidade:</label>
-                    <select name="Unidade" id="Unidade">
-                        <option value="selecioneUnidade">
+                    <select name="Unidade" id="Unidade" required>
+                        <option value="">
                             Selecione a unidade
                         </option>
                         <option value="UnidadeCentro">
@@ -44,13 +44,11 @@
                             Unidade Sul
                         </option>
                     </select>
-            </form>
         </div>
         <!--Serviço-->
-        <div>
-            <form>
+        <div class="campo-agendamento">
                 <label for="Servico">Serviço:</label>
-                    <select name="Servico" id="Servico">
+                    <select name="Servico" id="Servico" required>
                         <option value="">
                             Selecione o serviço
                         </option>
@@ -60,21 +58,20 @@
                         <option value="banho&tosa_c/_hidratacao">
                             Banho e tosa com hidratação
                         </option>
-                        <option value="banho&tosaSimples">
+                        <option value="banho&tosaPremium">
                             Banho e tosa premium
                         </option>
                     </select>
-            </form>
         </div>
         <!--Dia & horário-->
-        <div>
-            <form action="">
+        <div class="campo-agendamento">
                 <label for="data">
                     Data e horário: 
                 </label>
-                <input type="datetime-local" id="data" name="data">
-            </form>
+                <input type="datetime-local" id="data" name="data" required>
         </div>
+        <button type="submit">Agendar</button>
+        </form>
     </article>
     <!--Conferir Status Agendamento-->
     <article class="conferirAgendamento">

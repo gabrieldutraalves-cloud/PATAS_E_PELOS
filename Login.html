@@ -19,23 +19,23 @@
 <!--Início Main-->
     <main>
         
-        <div class="login">
+        <form class="login" action="PHP/login.php" method="post">
                 
-                <form class="formEmail">
+                <div class="formEmail">
                     <label for="email">Usuário:</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail">
-                </form>
+                    <input type="email" id="email" name="email" required autocomplete="username" placeholder="Digite seu e-mail">
+                </div>
         
-                <form class="formSenha">
+                <div class="formSenha">
                     <label for="senha">Senha:</label>
-                    <input type="password"  id="senha" placeholder="Digite sua senha">
-                </form>
+                    <input type="password"  id="senha" name="senha" required autocomplete="current-password" placeholder="Digite sua senha">
+                </div>
 
-                <button><a href="index.html">Entrar</a></button>
+                <button type="submit">Entrar</button>
 
                 <h3>Não possui uma conta? <a href="Cadastro.html">Cadastre-se</a></h3>
             
-        </div>
+        </form>
 
     </main>
 <!--Fim Main-->

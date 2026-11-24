@@ -1,22 +1,5 @@
 /* Início formulário de login */
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.login-fundo {
-    background: linear-gradient(#ffffffb5, #ffffffb5),
-                url('../Images/main.png') center / cover;
-
-    padding: 55px 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex: 1;
-    margin: 0;
-}
+.login-fundo { background: linear-gradient(#ffffffb5,#ffffffb5), url('../Images/main.png') center / cover; padding: 55px 18px; display: flex; justify-content: center; align-items: center; }
 .login { background: rgb(248,216,73); width: min(460px, 100%); padding: 30px; border: 1px solid #8d7927; }
 .login h1 { text-align: center; margin: 0 0 10px; }
 .login > p { text-align: center; line-height: 1.5; }

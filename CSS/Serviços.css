@@ -1,0 +1,10 @@
+/* Início cartões de serviços */
+.servicos-lista { display: grid; gap: 24px; }
+.servico-card { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; align-items: center; padding: 26px; background: #fff; border: 1px solid #e7debd; border-radius: 18px; }
+.servico-ilustracao { display: flex; justify-content: center; align-items: center; border-radius: 16px; background: #fff8d5; min-height: 185px; }
+.servico-ilustracao img { height: 145px; width: 145px; object-fit: contain; }
+.servico-descricao h2 { margin: 0 0 12px; }
+.servico-descricao p { line-height: 1.6; margin: 0 0 13px; }
+.servico-descricao .preco { font-weight: bold; }
+@media (max-width: 660px) { .servico-card { grid-template-columns: 1fr; padding: 18px; } .servico-ilustracao { min-height: 140px; } }
+/* Fim cartões de serviços */

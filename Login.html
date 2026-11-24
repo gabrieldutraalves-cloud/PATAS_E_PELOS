@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Patas & Pelos</title>
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/Login.css">
+    <script src="JS/sessao.js" defer></script>
+</head>
+<body>
+<!-- Início Cabeçalho -->
+<header class="header">
+    <a href="index.html" aria-label="Voltar ao início"><img class="header_img" src="Images/inicio.png" alt="Patas & Pelos"></a>
+    <nav class="nav" aria-label="Navegação principal">
+        <a href="Loja.html">Loja</a>
+        <a href="Servicos.html">Serviços</a>
+        <a href="Unidades.html">Unidades</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="Login.html" data-link-conta>Login</a>
+    </nav>
+</header>
+<!-- Fim Cabeçalho -->
+
+<main class="login-fundo">
+    <!-- Início formulário de login -->
+    <section class="login card">
+        <h1>Entrar na sua conta</h1>
+        <p>Acesse seus dados e acompanhe seus serviços.</p>
+        <p id="mensagem-cadastro" class="note" hidden>Cadastro concluído. Entre com seu e-mail e senha.</p>
+        <form class="form-login" action="PHP/Login.php" method="post">
+            <div class="form-field"><label for="email">E-mail:</label><input type="email" id="email" name="email" autocomplete="email" placeholder="Digite seu e-mail" required></div>
+            <div class="form-field"><label for="senha">Senha:</label><input type="password" id="senha" name="senha" autocomplete="current-password" placeholder="Digite sua senha" required></div>
+            <button type="submit" class="btn btn-dark">Entrar</button>
+        </form>
+        <p>Não possui uma conta? <a href="Cadastro.html">Cadastre-se</a></p>
+        <p class="muted aviso-login">O login será validado pelo PHP quando o banco de dados estiver configurado.</p>
+    </section>
+    <!-- Fim formulário de login -->
+</main>
+<script src="JS/login.js" defer></script>
+<!-- Início Rodapé -->
+<footer class="footer">
+    <ul class="footer-list">
+        <li>© Patas & Pelos</li>
+        <li>Contato: informações a confirmar</li>
+        <li><a href="Entregas.html">Entregas</a></li>
+        <li><a href="Suporte.html">Suporte</a></li>
+    </ul>
+</footer>
+<!-- Fim Rodapé -->
+</body>
+</html>

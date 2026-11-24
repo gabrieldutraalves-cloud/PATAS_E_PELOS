@@ -1,0 +1,8 @@
+/* Início cartões de suporte */
+.suporte-lista { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin: 35px 0; }
+.suporte-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+.suporte-card h2 { font-size: 20px; margin: 0; }
+.suporte-card p { line-height: 1.5; flex: 1; margin: 0; }
+.suporte-icone { font-size: 60px; }
+@media (max-width: 760px) { .suporte-lista { grid-template-columns: 1fr; } }
+/* Fim cartões de suporte */

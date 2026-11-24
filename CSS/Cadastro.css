@@ -1,0 +1,9 @@
+/* Início formulário de cadastro */
+.cadastro-fundo { background: linear-gradient(#ffffffba,#ffffffba), url('../Images/main.png') center / cover; padding: 48px 18px; display: flex; align-items: center; justify-content: center; }
+.cadastro { background: rgb(248,216,73); width: min(500px, 100%); padding: 30px; border: 1px solid #8d7927; }
+.cadastro h1 { text-align: center; margin: 0 0 20px; }
+.form-cadastro { display: grid; gap: 16px; }
+.form-cadastro .btn { width: 100%; }
+.cadastro > p { text-align: center; }
+.erro { margin: 0; color: #9d1616; font-weight: 700; }
+/* Fim formulário de cadastro */

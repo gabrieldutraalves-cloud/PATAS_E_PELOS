@@ -1,0 +1,193 @@
+/* Início todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* Fim todo o site */
+
+/* Início body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Fim body */
+
+/* Inínio html */
+html {
+    scroll-behavior: smooth;
+}
+/* Fim html */
+
+/* Início header */
+.header {
+    background-color: rgb(248, 216, 73);
+    display: flex;
+    align-items: center;
+    padding: 6px 70px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.header_img {
+    width: 90px;
+    height: 90px;
+}
+
+.nav_list {
+    display: flex;
+    gap: 0px;
+    list-style: none;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: black;
+}
+/* Fim header */
+
+/* Início Main */
+.about {
+    background-image: url('../Images/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 82px;
+}
+
+.about-text {
+    color: white;
+    max-width: 65%;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.about p {
+    font-size: 35px;
+    padding-top: 180px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+/* Fim Main */
+
+/* Início services */
+.services {
+    background-color: rgb(248, 216, 73);
+} 
+
+.services-div h1 {
+    font-size: 36px;
+    padding: 40px 0px;
+    text-align: center;
+    background-color: white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 18px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px;
+}
+
+.services h3 {
+    margin-top:20px;
+    font-size: 30px;
+}
+
+.services p {
+    padding-bottom: 30px;
+    font-size: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.services-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.services-div article {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+    border-radius: 35px;
+    box-shadow: 6px 6px 6px rgb(182, 182, 101);
+}
+
+.services-div img {
+    width: 400px;
+    height: 455px;
+    margin: 20px;
+    border-radius: 35px;
+}
+
+.preço {
+    box-shadow: none;
+}
+/* Fim services */
+
+/* Início categories */
+.categories {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.categories h2 {
+    padding-top: 20px ;
+    text-align: center;
+}
+
+.categories-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 180px;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.categories-div img {
+    width: 140px;
+    height: 140px;
+    
+}
+/* Fim categories */
+
+/* Início location */
+.location {
+    text-align: center;
+    padding: 30px;
+}
+
+.map {
+    padding: 30px;
+}
+/* Fim location */
+
+/* Início footer */
+.footer {
+    padding: 30px;
+    color: rgb(36, 34, 34);
+    background-color: rgb(248, 216, 73);
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+/* Fim footer */

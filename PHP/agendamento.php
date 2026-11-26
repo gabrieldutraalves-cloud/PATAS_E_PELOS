@@ -70,11 +70,17 @@ try {
     mysqli_stmt_bind_param($stmt, 'isss', $cliente_id, $unidade, $servico, $data);
     mysqli_stmt_execute($stmt);
 
+    // O ID gerado pelo MySQL será o protocolo único do agendamento.
+    $protocolo = mysqli_insert_id($patas_e_pelos);
+
     // Fechar o comando e a conexão com o banco.
     mysqli_stmt_close($stmt);
     mysqli_close($patas_e_pelos);
 
-    echo 'Agendamento realizado com sucesso! <a href="../agendamento.html">Voltar ao agendamento</a>'; 
+    // Exibir o protocolo na página de status, sem reenviar o formulário.
+    $_SESSION['novo_agendamento'] = $protocolo;
+    header('Location: ../status.php?protocolo=' . $protocolo, true, 303);
+    exit; 
 } catch (mysqli_sql_exception $erro) {
     http_response_code(500);
     exit('Não foi possível realizar o agendamento. <a href="../agendamento.html">Voltar</a>');

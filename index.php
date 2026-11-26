@@ -40,24 +40,18 @@ session_start();
                         Serviços
                     </a>
                 </li>
-                <li>
                 <?php if (isset($_SESSION['cliente_id'])) { ?>
                     <li>
-                        <a class="Login">Minha conta</a>
+                        <a href="usuario.php" class="Login">Minha conta</a>
                     </li>
-
                     <li>
                         <a href="PHP/logout.php" class="Login">Sair</a>
                     </li>
-
-                    <?php } else { ?>
-
+                <?php } else { ?>
                     <li>
                         <a href="Login.html" class="Login">Login</a>
                     </li>
-
-                    <?php } ?>
-                </li>                
+                <?php } ?>
             </Ul>
         </nav>
     </header>

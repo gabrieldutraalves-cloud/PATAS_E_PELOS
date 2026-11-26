@@ -1,0 +1,29 @@
+/* Carrinho lateral: cores, bordas e fonte do Patas & Pelos */
+.btn-carrinho { display: inline-block; padding: 12px 20px; border: 1px solid #a88c25; border-radius: 10px; background: #f8d849; color: #222; font-weight: 700; text-decoration: none; font-size: 16px; }
+.btn-carrinho:hover:not(:disabled) { background: #edc832; }
+.btn-carrinho:disabled { opacity: .5; cursor: not-allowed; }
+.produtos .btn-carrinho { width: 100%; margin-top: 5px; }
+#abrir-carrinho { background: #fffdf5; }
+.carrinho-lateral { position: fixed; inset: 0 0 0 auto; margin: 0; width: min(100%, 420px); max-width: 100%; height: 100%; max-height: 100%; padding: 0; border: 0; border-left: 1px solid #a88c25; background: #fffdf5; color: #28251c; box-shadow: -6px 0 25px #0003; overflow-y: auto; }
+.carrinho-lateral::backdrop { background: #0006; }
+.carrinho-topo { background: #f8d849; padding: 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #a88c25; }
+.carrinho-topo h2 { font-size: 24px; margin: 0; }
+#fechar-carrinho { width: 38px; height: 38px; border-radius: 10px; border: 1px solid #a88c25; background: white; font-size: 26px; }
+.carrinho-corpo { padding: 22px; }
+.carrinho-corpo [hidden] { display: none; }
+.carrinho-corpo h3 { margin-bottom: 15px; font-size: 22px; }
+.carrinho-corpo p { margin-bottom: 16px; line-height: 1.5; }
+.carrinho-corpo .btn-carrinho { width: 100%; margin: 10px 0 0; }
+.carrinho-item { display: flex; align-items: center; gap: 12px; padding: 12px; margin: 0 0 12px; border: 1px solid #e3d7ad; background: white; border-radius: 12px; }
+.carrinho-item img { width: 68px; height: 80px; object-fit: contain; }
+.carrinho-item div { flex: 1; min-width: 0; }
+.carrinho-item h4 { font-size: 16px; margin-bottom: 6px; }
+.carrinho-item p { font-size: 14px; margin: 0 0 6px; }
+.carrinho-item button { border: 1px solid #a88c25; border-radius: 6px; padding: 4px 9px; background: #fffdf5; color: #28251c; margin-right: 6px; }
+.carrinho-total { display: flex; justify-content: space-between; gap: 10px; margin: 18px 0; border-top: 1px solid #e3d7ad; padding-top: 16px; font-size: 20px; }
+.carrinho-aviso { font-size: 14px; color: #625b4c; }
+.carrinho-corpo fieldset { padding: 16px; border: 1px solid #e3d7ad; border-radius: 10px; background: white; }
+.carrinho-corpo legend { font-weight: bold; }
+.carrinho-corpo fieldset label { display: block; margin: 10px 0; }
+.carrinho-corpo .secundario { background: white; }
+#etapa-concluida { text-align: center; }

@@ -78,9 +78,9 @@
         <h3>
             Status Agendamento
         </h3>
-        <form action="status.html" method="get">
+        <form action="status.php" method="get">
             <label for="protocolo">Protocolo:</label>
-            <input type="text" name="protocolo" id="protocolo">
+            <input type="number" name="protocolo" id="protocolo" min="1" step="1" required placeholder="Ex.: 1">
                 <button type="submit">Verificar status</button>
         </form>
     </article>

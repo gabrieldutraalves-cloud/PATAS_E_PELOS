@@ -7,6 +7,7 @@
     <title>Loja</title>
     <!-- Ajustes de alinhamento e responsividade -->
     <link rel="stylesheet" href="CSS/ajustes-visuais.css">
+    <link rel="stylesheet" href="CSS/carrinho.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
 </head>
 <body class="pagina-loja">
@@ -17,6 +18,7 @@
                 <li>
                     Loja
                 </li>
+                <li><button type="button" id="abrir-carrinho" class="btn-carrinho">Carrinho (<span id="quantidade-carrinho">0</span>)</button></li>
             </Ul>
         </nav>
     </header>
@@ -37,13 +39,47 @@
         <section class="catalogo">
             <h2>Nossos produtos</h2>
             <div class="produtos">
-                <article><img src="Images/ração1.webp" alt="Ração LeAu"><h3>Ração LeAu</h3><p>Ração para cães adultos, embalagem de 15 kg.</p><strong>R$ 89,90</strong></article>
-                <article><img src="Images/ração2.webp" alt="Ração Suprema"><h3>Ração Suprema</h3><p>Ração sabor carne para cães.</p><strong>R$ 79,90</strong></article>
-                <article><img src="Images/ração3.webp" alt="Ração Golden Special"><h3>Ração Golden Special</h3><p>Ração seca para cães adultos.</p><strong>R$ 119,90</strong></article>
+                <article><img src="Images/ração1.webp" alt="Ração LeAu"><h3>Ração LeAu</h3><p>Ração para cães adultos, embalagem de 15 kg.</p><strong>R$ 89,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="leau" data-preco="8990">Adicionar ao carrinho</button></article>
+                <article><img src="Images/ração2.webp" alt="Ração Suprema"><h3>Ração Suprema</h3><p>Ração sabor carne para cães.</p><strong>R$ 79,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="suprema" data-preco="7990">Adicionar ao carrinho</button></article>
+                <article><img src="Images/ração3.webp" alt="Ração Golden Special"><h3>Ração Golden Special</h3><p>Ração seca para cães adultos.</p><strong>R$ 119,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="golden" data-preco="11990">Adicionar ao carrinho</button></article>
             </div>
             <p class="catalogo-aviso">Catálogo demonstrativo — preços ilustrativos.</p>
         </section>
     </main>
+    <!-- Carrinho lateral e pagamento demonstrativo -->
+    <dialog id="carrinho" class="carrinho-lateral" aria-labelledby="titulo-carrinho">
+        <div class="carrinho-topo">
+            <h2 id="titulo-carrinho">Meu carrinho</h2>
+            <button type="button" id="fechar-carrinho" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div class="carrinho-corpo">
+            <section id="etapa-carrinho">
+                <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+                <div id="itens-carrinho" aria-live="polite"></div>
+                <div class="carrinho-total"><strong>Total</strong><strong id="total-carrinho">R$ 0,00</strong></div>
+                <button type="button" id="ir-pagamento" class="btn-carrinho" disabled>Ir para pagamento</button>
+            </section>
+            <section id="etapa-pagamento" hidden>
+                <h3>Confirme os dados de pagamento</h3>
+                <p class="carrinho-aviso">Compra simulada. Não informe dados financeiros reais.</p>
+                <fieldset>
+                    <legend>Forma de pagamento</legend>
+                    <label><input type="radio" name="pagamento" value="cartao" checked> Cartão de teste •••• 0000</label>
+                    <label><input type="radio" name="pagamento" value="pix"> Pix simulado</label>
+                </fieldset>
+                <div class="carrinho-total"><strong>Valor a confirmar</strong><strong id="total-pagamento"></strong></div>
+                <button type="button" id="confirmar-pagamento" class="btn-carrinho">Confirmar pagamento</button>
+                <button type="button" id="voltar-carrinho" class="btn-carrinho secundario">Voltar ao carrinho</button>
+            </section>
+            <section id="etapa-concluida" hidden>
+                <h3>Pagamento simulado com sucesso!</h3>
+                <p id="resumo-pagamento"></p>
+                <p>Nenhuma cobrança foi realizada.</p>
+                <button type="button" id="voltar-loja" class="btn-carrinho">Voltar à loja</button>
+            </section>
+        </div>
+    </dialog>
     <script src="JAVA%20SCRIPT/script.js"></script>
+    <script src="JAVA%20SCRIPT/carrinho.js"></script>
 </body>
 </html>

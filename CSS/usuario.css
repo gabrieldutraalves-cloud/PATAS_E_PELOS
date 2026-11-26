@@ -1,0 +1,19 @@
+/* Área do usuário - mesma identidade visual das demais páginas */
+.pagina-usuario { background: #fffdf5; color: #28251c; }
+.pagina-usuario .header { border-bottom: 1px solid #a88c25; }
+.pagina-usuario .nav ul { font-size: 22px; }
+.conta-conteudo { max-width: 1000px; margin: 32px auto; padding: 0 20px 36px; }
+.conta-conteudo h1 { text-align: center; font-size: clamp(25px, 3vw, 36px); margin: 0 0 8px; overflow-wrap: anywhere; }
+.conta-intro { text-align: center; color: #625b4c; margin: 0 0 28px; }
+.conta-dados { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 22px; }
+.conta-card { background: white; border: 1px solid #e3d7ad; border-radius: 16px; box-shadow: 0 4px 12px #0001; padding: 24px; margin-bottom: 22px; overflow-wrap: anywhere; }
+.conta-card h2 { font-size: 24px; margin: 0 0 20px; }
+.conta-card dl { margin: 0; }
+.conta-card dt { font-weight: bold; margin-bottom: 6px; }
+.conta-card dd { background: #fffdf5; border: 1px solid #e3d7ad; padding: 10px 12px; border-radius: 8px; margin: 0 0 16px; }
+.conta-aviso { color: #625b4c; font-size: 14px; line-height: 1.5; margin-bottom: 0; }
+.conta-lista { margin-bottom: 20px; }
+.conta-lista article { border-bottom: 1px solid #e3d7ad; padding: 15px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.conta-lista h3 { margin: 0 0 6px; font-size: 19px; }
+.conta-lista p { margin: 5px 0; }
+.conta-card .btn-unidade { display: inline-block; margin-top: 10px; }

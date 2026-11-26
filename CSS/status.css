@@ -6,3 +6,5 @@
 .voltar:hover { background: #edc832; }
 .voltar-secundario { margin-top: 12px; background: white; }
 @media (max-width: 420px) { dl { grid-template-columns: 1fr; gap: 5px; } dd { text-align: left; margin-bottom: 10px; } }
+
+a:focus-visible, button:focus-visible { outline: 2px solid #5b4511; outline-offset: 3px; }

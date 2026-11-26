@@ -18,6 +18,7 @@ imagens.forEach((imagem, indice) => {
     const indicador = document.createElement("button");
 
     indicador.classList.add("indicador");
+    indicador.type = "button";
 
     indicador.setAttribute(
         "aria-label",
@@ -41,12 +42,17 @@ function atualizarCarrossel() {
     listaImagens.style.transform =
         `translateX(-${imagemAtual * 100}%)`;
 
+    imagens.forEach((imagem, indice) => {
+        imagem.setAttribute("aria-hidden", String(indice !== imagemAtual));
+    });
+
     /* Seleciona todos os indicadores */
     const todosIndicadores =
         document.querySelectorAll(".indicador");
 
     /* Destaca o indicador da imagem atual */
     todosIndicadores.forEach((indicador, indice) => {
+        indicador.setAttribute("aria-current", indice === imagemAtual ? "true" : "false");
         indicador.classList.toggle(
             "ativo",
             indice === imagemAtual

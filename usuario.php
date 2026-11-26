@@ -51,14 +51,19 @@ $servicos = ['banho&tosaSimples' => 'Banho e tosa simples', 'banho&tosa_c/_hidra
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha conta | Patas &amp; Pelos</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Área individual do cliente do Patas &amp; Pelos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="CSS/usuario.css">
     <link rel="stylesheet" href="CSS/ajustes-visuais.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
+    <link rel="icon" type="image/webp" href="Images/favicon.webp">
 </head>
 <body class="pagina-usuario">
     <header class="header">
-        <a href="index.php"><img class="header_img" src="Images/inicio.png" alt="Página inicial"></a>
-        <nav class="nav"><ul><li>Minha conta</li><li><a href="PHP/logout.php">Sair</a></li></ul></nav>
+        <a href="index.php"><img class="header_img" src="Images/inicio.webp" alt="Página inicial" width="421" height="421"></a>
+        <nav aria-label="Navegação principal" class="nav"><ul><li>Minha conta</li><li><a href="PHP/logout.php">Sair</a></li></ul></nav>
     </header>
     <main class="conta-conteudo">
         <?php if ($mensagem !== '') { ?>

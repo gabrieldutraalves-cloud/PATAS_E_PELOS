@@ -104,7 +104,7 @@ button {
 }
 
 button:hover { background: #222; }
-button:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 2px; }
+button:focus-visible { outline: 3px solid var(--preto); outline-offset: 2px; }
 
 footer {
   text-align: center;

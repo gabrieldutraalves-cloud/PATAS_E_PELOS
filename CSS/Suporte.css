@@ -86,7 +86,7 @@ h1 {
     height: 300px;
     
     align-items: center;
-    background-color:none;
+    background-color: transparent;
 }
 
 .opcoes article h2 {

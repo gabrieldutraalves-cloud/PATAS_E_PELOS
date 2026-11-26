@@ -25,7 +25,7 @@ button { cursor: pointer; }
 .about h1 { padding: 0; font-size: clamp(30px, 3.8vw, 58px); line-height: 1.15; }
 .about p { padding: 24px 0 0; font-size: clamp(18px, 2vw, 30px); line-height: 1.45; }
 .services-titulo { padding: 28px 20px 10px; }
-.services-titulo h1 { width: fit-content; max-width: 100%; margin: 0 auto; font-size: clamp(24px, 3vw, 36px); }
+.services-titulo h2 { width: fit-content; max-width: 100%; margin: 0 auto; font-size: clamp(24px, 3vw, 36px); }
 .services-div { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; padding: 12px 24px 36px; }
 .services-div article { width: min(100%, 355px); margin: 0; overflow: hidden; }
 .services-div article h3 { margin: 16px 8px; }
@@ -49,14 +49,14 @@ button { cursor: pointer; }
 /* Fim páginas Unidades e Serviços */
 
 /* Início formulários - preservar campos e envio existentes */
-body:has(.cadastro), body:has(.login) { background-image: url('../Images/main.png'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; }
+body:has(.cadastro), body:has(.login) { background-image: url('../Images/main.webp'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; }
 body:has(.cadastro) main, body:has(.login) main { margin: 0; padding: 50px 16px; min-height: calc(100vh - 82px); display: flex; align-items: center; justify-content: center; }
 .cadastro, .login { width: min(100%, 540px); max-width: 540px; height: auto; min-height: 330px; padding: 30px clamp(18px, 4vw, 35px); gap: 16px; }
 .cadastro .form { width: 100%; max-width: 100%; font-size: clamp(18px, 2vw, 24px); }
 .cadastro .form input { max-width: 100%; min-width: 0; padding: 6px; }
 .formEmail, .formSenha { width: 100%; max-width: 100%; min-height: 70px; height: auto; margin: 6px 0; padding: 10px; font-size: clamp(19px, 2vw, 25px); gap: 8px; }
 .formEmail input, .formSenha input { width: 100%; min-width: 0; font-size: 17px; }
-.login h3 { margin-top: 20px; text-align: center; font-size: 17px; }
+.login .cadastro-link { margin-top: 20px; text-align: center; font-size: 17px; }
 .login button, .cadastro button { transition: transform .18s ease, background-color .18s ease; }
 .login button:hover, .cadastro button:hover { transform: translateY(-2px); }
 /* Fim formulários */
@@ -147,7 +147,7 @@ body:has(.about) .header { position: fixed; top: 0; z-index: 100; height: 83px; 
 .pagina-unidades .unidade_centro, .pagina-unidades .unidade_sul { max-width: 1180px; margin: 30px auto; padding: 26px; border: 1px solid #e4d9ad; border-radius: 22px; background: #fffdf5; gap: 40px; }
 .pagina-unidades .imageCentro img, .pagina-unidades .imageSul img { border-radius: 16px; width: 100%; max-height: none; }
 .pagina-unidades .divCentro, .pagina-unidades .divSul { padding: 20px; gap: 18px; }
-.pagina-unidades h1 { font-size: clamp(28px, 3vw, 40px); line-height: 1.2; }
+.pagina-unidades h1, .pagina-unidades h2 { font-size: clamp(28px, 3vw, 40px); line-height: 1.2; }
 .pagina-unidades section p { font-size: 18px; color: #39342a; }
 .btn-unidade { display: inline-block; align-self: flex-start; padding: 12px 24px; background: #f8d849; color: #222; border: 1px solid #a88c25; border-radius: 10px; font-weight: 700; text-decoration: none; }
 .btn-unidade:hover { background: #edc832; }
@@ -155,10 +155,10 @@ body:has(.about) .header { position: fixed; top: 0; z-index: 100; height: 83px; 
 
 
 /* Agendamento */
-.pagina-agendamento { min-height: 100vh; background: linear-gradient(#ffffff75,#ffffff75), url('../Images/main.png') center / cover no-repeat fixed; }
+.pagina-agendamento { min-height: 100vh; background: linear-gradient(#ffffff75,#ffffff75), url('../Images/main.webp') center / cover no-repeat fixed; }
 .pagina-agendamento .Agendamento { margin: clamp(28px, 8vh, 90px) auto; padding: clamp(20px,4vw,42px); border-radius: 24px; border: 1px solid #a88c25; box-shadow: 0 8px 24px #0002; gap: 24px; }
 .pagina-agendamento .Agendamento article { background: #fffdf5; border-radius: 15px; padding: 22px; }
-.pagina-agendamento .Agendamento h3 { text-align: center; padding: 0 0 22px; font-size: 24px; }
+.pagina-agendamento .Agendamento h1, .pagina-agendamento .Agendamento h2 { text-align: center; padding: 0 0 22px; font-size: 24px; }
 .pagina-agendamento .Agendamento input, .pagina-agendamento .Agendamento select { border: 1px solid #a99b73; border-radius: 8px; padding: 10px; background: white; }
 .pagina-agendamento .Agendamento button { display: block; margin: 22px auto 0; padding: 12px 22px; border: 1px solid #9d8022; border-radius: 10px; background: #f8d849; color: #222; font-weight: 700; }
 .pagina-agendamento .Agendamento button:hover { background: #edc832; }
@@ -173,8 +173,8 @@ body:has(.about) .header { position: fixed; top: 0; z-index: 100; height: 83px; 
 
 
 /* Suporte */
-.pagina-suporte { min-height: 100vh; background: linear-gradient(#ffffff94,#ffffff94), url('../Images/main.png') center / cover no-repeat fixed; }
-.pagina-suporte > h1 { padding: 40px 16px 0; font-size: clamp(26px, 3vw, 40px); }
+.pagina-suporte { min-height: 100vh; background: linear-gradient(#ffffff94,#ffffff94), url('../Images/main.webp') center / cover no-repeat fixed; }
+.pagina-suporte > main > h1 { padding: 40px 16px 0; font-size: clamp(26px, 3vw, 40px); }
 .pagina-suporte .opcoes { max-width: 1380px; align-items: stretch; gap: 26px; padding: 0 24px 40px; margin: 40px auto; }
 .pagina-suporte .opcoes article { flex: 1 1 280px; width: auto; max-width: 390px; border: 1px solid #a88c25; border-radius: 22px; box-shadow: 0 6px 18px #0002; }
 .pagina-suporte .opcoes article:hover { border: 1px solid #6c5816; }
@@ -220,3 +220,14 @@ body:has(.about) .header { position: fixed; top: 0; z-index: 100; height: 83px; 
 @media(max-width:650px){.imagem{flex-direction:column;gap:16px;text-align:center;padding:20px 44px}.imagem img{width: min(100%,180px);height:190px}.imagem p{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.lista-imagens{transition:none}}
 @media(min-width:651px){ .about { justify-content: flex-start; } .about section .about-text { text-shadow: 1px 2px 6px #000, 0 0 14px #0009; } }
+
+/* Acessibilidade: preservar o visual e permitir navegação por teclado. */
+.somente-leitor { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+textarea:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #5b4511; outline-offset: 3px; }
+.login .cadastro-link { font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
+
+/* Link de atalho visível apenas durante a navegação por teclado. */
+.pular-conteudo { position: fixed; top: 8px; left: 8px; z-index: 101; padding: 10px 14px; background: #fffdf5; color: #222; border-radius: 8px; transform: translateY(-150%); }
+.pular-conteudo:focus { transform: translateY(0); }
+.about { background-color: #443625; }

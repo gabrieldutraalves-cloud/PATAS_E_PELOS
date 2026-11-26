@@ -63,12 +63,12 @@ html {
 
 
 /* agendar */
-.agendar h3 {
+.agendar h1 {
     padding: 10px;
 }
 
 /* conferir agendamento */
-.conferirAgendamento h3 {
+.conferirAgendamento h2 {
     padding: 10px;
 }
 

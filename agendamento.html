@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="CSS/agendamento.css">
-    <title>Agendamento</title>
+    <title>Agendamento | Patas &amp; Pelos</title>
+    <meta name="description" content="Agende um serviço de banho e tosa e consulte seu atendimento pelo protocolo.">
     <!-- Ajustes de alinhamento e responsividade -->
     <link rel="stylesheet" href="CSS/ajustes-visuais.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
+    <link rel="icon" type="image/webp" href="Images/favicon.webp">
 </head>
 <body class="pagina-agendamento">
 <!--Início Cabeçalho-->
 <header class="header">        
-    <a href="index.php"><img class="header_img" src="Images/inicio.png" alt="logo"></a>
-    <nav class="nav">
-        <Ul>
+    <a href="index.php"><img class="header_img" src="Images/inicio.webp" alt="Patas &amp; Pelos — página inicial" width="421" height="421"></a>
+    <nav aria-label="Navegação principal" class="nav">
+        <ul>
             <li>
                 Agendamento
             </li>
-        </Ul>
+        </ul>
     </nav>
 </header>
 <!--Fim Cabeçalho-->
 
-<div class="Agendamento">
+<div class="Agendamento" role="main">
     <!--Área de agendamento-->
     <article class="agendar">
-        <h3>
+        <h1>
             Agendamento
-        </h3>
+        </h1>
         <form action="PHP/agendamento.php" method="post">
         <div class="campo-agendamento">
             <!--Unidade-->
@@ -52,13 +56,13 @@
                         <option value="">
                             Selecione o serviço
                         </option>
-                        <option value="banho&tosaSimples">
+                        <option value="banho&amp;tosaSimples">
                             Banho e tosa simples
                         </option>
-                        <option value="banho&tosa_c/_hidratacao">
+                        <option value="banho&amp;tosa_c/_hidratacao">
                             Banho e tosa com hidratação
                         </option>
-                        <option value="banho&tosaPremium">
+                        <option value="banho&amp;tosaPremium">
                             Banho e tosa premium
                         </option>
                     </select>
@@ -75,9 +79,9 @@
     </article>
     <!--Conferir Status Agendamento-->
     <article class="conferirAgendamento">
-        <h3>
+        <h2>
             Status Agendamento
-        </h3>
+        </h2>
         <form action="status.php" method="get">
             <label for="protocolo">Protocolo:</label>
             <input type="number" name="protocolo" id="protocolo" min="1" step="1" required placeholder="Ex.: 1">

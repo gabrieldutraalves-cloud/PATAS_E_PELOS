@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="CSS/loja.css">
-    <title>Loja</title>
+    <title>Loja | Patas &amp; Pelos</title>
+    <meta name="description" content="Explore o catálogo demonstrativo de rações do Patas &amp; Pelos e simule uma compra.">
     <!-- Ajustes de alinhamento e responsividade -->
     <link rel="stylesheet" href="CSS/ajustes-visuais.css">
     <link rel="stylesheet" href="CSS/carrinho.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
+    <link rel="icon" type="image/webp" href="Images/favicon.webp">
 </head>
 <body class="pagina-loja">
     <header class="header">
-        <a href="index.php"><img class="header_img" src="Images/inicio.png" alt="logo"></a>
-        <nav class="nav">
-            <Ul>
+        <a href="index.php"><img class="header_img" src="Images/inicio.webp" alt="Patas &amp; Pelos — página inicial" width="421" height="421"></a>
+        <nav aria-label="Navegação principal" class="nav">
+            <ul>
                 <li>
                     Loja
                 </li>
                 <li><button type="button" id="abrir-carrinho" class="btn-carrinho">Carrinho (<span id="quantidade-carrinho">0</span>)</button></li>
-            </Ul>
+            </ul>
         </nav>
     </header>
     <main class="loja-conteudo">
@@ -27,9 +31,9 @@
             <h1>Produtos em destaque</h1>
             <div class="carrossel-janela">
                 <div class="lista-imagens">
-                    <article class="imagem"><img src="Images/ração1.webp" alt="Ração LeAu"><div><h2>Ração LeAu</h2><p>Alimentação para cães adultos.</p></div></article>
-                    <article class="imagem"><img src="Images/ração2.webp" alt="Ração Suprema"><div><h2>Ração Suprema</h2><p>Sabor carne para cães.</p></div></article>
-                    <article class="imagem"><img src="Images/ração3.webp" alt="Ração Golden Special"><div><h2>Ração Golden Special</h2><p>Alimentação para cães adultos.</p></div></article>
+                    <article class="imagem"><img src="Images/ração1.webp" alt="Ração LeAu" width="318" height="318" decoding="async"><div><h2>Ração LeAu</h2><p>Alimentação para cães adultos.</p></div></article>
+                    <article class="imagem"><img src="Images/ração2.webp" alt="Ração Suprema" width="318" height="318" decoding="async"><div><h2>Ração Suprema</h2><p>Sabor carne para cães.</p></div></article>
+                    <article class="imagem"><img src="Images/ração3.webp" alt="Ração Golden Special" width="318" height="318" decoding="async"><div><h2>Ração Golden Special</h2><p>Alimentação para cães adultos.</p></div></article>
                 </div>
                 <button type="button" class="botao-anterior" aria-label="Produto anterior">❮</button>
                 <button type="button" class="botao-proximo" aria-label="Próximo produto">❯</button>
@@ -39,9 +43,9 @@
         <section class="catalogo">
             <h2>Nossos produtos</h2>
             <div class="produtos">
-                <article><img src="Images/ração1.webp" alt="Ração LeAu"><h3>Ração LeAu</h3><p>Ração para cães adultos, embalagem de 15 kg.</p><strong>R$ 89,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="leau" data-preco="8990">Adicionar ao carrinho</button></article>
-                <article><img src="Images/ração2.webp" alt="Ração Suprema"><h3>Ração Suprema</h3><p>Ração sabor carne para cães.</p><strong>R$ 79,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="suprema" data-preco="7990">Adicionar ao carrinho</button></article>
-                <article><img src="Images/ração3.webp" alt="Ração Golden Special"><h3>Ração Golden Special</h3><p>Ração seca para cães adultos.</p><strong>R$ 119,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="golden" data-preco="11990">Adicionar ao carrinho</button></article>
+                <article><img src="Images/ração1.webp" alt="Ração LeAu" width="318" height="318" decoding="async" loading="lazy"><h3>Ração LeAu</h3><p>Ração para cães adultos, embalagem de 15 kg.</p><strong>R$ 89,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="leau" data-preco="8990">Adicionar ao carrinho</button></article>
+                <article><img src="Images/ração2.webp" alt="Ração Suprema" width="318" height="318" decoding="async" loading="lazy"><h3>Ração Suprema</h3><p>Ração sabor carne para cães.</p><strong>R$ 79,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="suprema" data-preco="7990">Adicionar ao carrinho</button></article>
+                <article><img src="Images/ração3.webp" alt="Ração Golden Special" width="318" height="318" decoding="async" loading="lazy"><h3>Ração Golden Special</h3><p>Ração seca para cães adultos.</p><strong>R$ 119,90</strong><button type="button" class="btn-carrinho adicionar-produto" data-produto="golden" data-preco="11990">Adicionar ao carrinho</button></article>
             </div>
             <p class="catalogo-aviso">Catálogo demonstrativo — preços ilustrativos.</p>
         </section>
@@ -79,7 +83,7 @@
             </section>
         </div>
     </dialog>
-    <script src="JAVA%20SCRIPT/script.js"></script>
-    <script src="JAVA%20SCRIPT/carrinho.js"></script>
+    <script defer src="JAVA%20SCRIPT/script.js"></script>
+    <script defer src="JAVA%20SCRIPT/carrinho.js"></script>
 </body>
 </html>

@@ -48,12 +48,17 @@ $servicos = ['banho&tosaSimples' => 'Banho e tosa simples', 'banho&tosa_c/_hidra
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Status do agendamento | Patas &amp; Pelos</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Consulte o status do seu agendamento no Patas &amp; Pelos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap">
     <link rel="stylesheet" href="CSS/status.css">
+    <link rel="icon" type="image/webp" href="Images/favicon.webp">
 </head>
 <body>
     <header>
-        <a href="index.php"><img src="Images/inicio.png" alt="Página inicial"></a>
+        <a href="index.php"><img src="Images/inicio.webp" alt="Página inicial" width="421" height="421"></a>
         <h1>Status do agendamento</h1>
     </header>
     <main>

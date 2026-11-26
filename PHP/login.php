@@ -58,7 +58,7 @@ try {
     $_SESSION['cliente_id'] = $cliente_id;
 
     // Login realizado: ir para a página inicial.
-    header('Location: ../index.html', true, 303);
+    header('Location: ../index.php', true, 303);
     exit;
 } catch (mysqli_sql_exception $erro) {
     http_response_code(500);

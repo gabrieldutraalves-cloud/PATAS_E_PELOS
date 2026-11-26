@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -38,9 +41,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Login.html" class="Login">
-                        Login
-                    </a>
+                    <?php if (isset($_SESSION['cliente_id'])) { ?>
+
+                        <a class="Login">
+                            Minha conta
+                        </a>
+
+                    <?php } else { ?>
+
+                        <a href="Login.html" class="Login">
+                            Login
+                        </a>
+
+                    <?php } ?>
                 </li>                
             </Ul>
         </nav>

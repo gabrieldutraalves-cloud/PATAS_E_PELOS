@@ -41,17 +41,20 @@ session_start();
                     </a>
                 </li>
                 <li>
-                    <?php if (isset($_SESSION['cliente_id'])) { ?>
+                <?php if (isset($_SESSION['cliente_id'])) { ?>
+                    <li>
+                        <a class="Login">Minha conta</a>
+                    </li>
 
-                        <a class="Login">
-                            Minha conta
-                        </a>
+                    <li>
+                        <a href="PHP/logout.php" class="Login">Sair</a>
+                    </li>
 
                     <?php } else { ?>
 
-                        <a href="Login.html" class="Login">
-                            Login
-                        </a>
+                    <li>
+                        <a href="Login.html" class="Login">Login</a>
+                    </li>
 
                     <?php } ?>
                 </li>                
